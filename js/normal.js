@@ -81,7 +81,7 @@ function colocarEnFeed(){
         case "png":
         case "jpeg":
         case "gif":
-            divCola.innerHTML +="<div class='row' style='border-top:0; border: 1px solid #e6e6e6; padding-top: 2%; padding-bottom: 2%;'><img src='"+URL.createObjectURL(fich)+"'> " + archivosCargar[i].name +" "+ tamredu +" | Esperando... <img src='../img/ajax_clock_small.gif'></div>";
+            divCola.innerHTML +="<div class='row' style='border-top:0; border: 1px solid #e6e6e6; padding-top: 2%; padding-bottom: 2%;'><img src='"+URL.createObjectURL(fich)+"' style='width:50px; heigth:50px;'> " + archivosCargar[i].name +" "+ tamredu +" | Esperando... <img src='../img/ajax_clock_small.gif'></div>";
             break;
         // Música
         case "mp3":
