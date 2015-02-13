@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Subida de Archivos</title>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+    <!-- Mi Css -->
+    <link href="css/all.css" rel="stylesheet">
+    <!-- Mi Javascript -->
+    <script type="text/javascript" src="js/inicio.js"></script>    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Drag & Drop</a></li>
+            <li role="presentation"><a href="./php/normal.php">Normal</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Subida de Archivos</h3>
+      </div>
+      
+      <div class="row">
+          <div class="col-md-12">
+              <div id="caja">
+                  <h3 align="center">Arrastre aqui sus archivos </br>o</br>Haga click aqui para selecionarlos manualmente</h3>
+                  <div id="miniatura"></div>
+              </div>
+          </div>
+      </div>
+      <div class="row" id="feed" style="display: none;">
+          <div class="col-md-12">
+              <h2 align="center">Progreso</h2>
+          </div>
+          <div class="col-md-12" style="border-top:0; border: 1px solid #e6e6e6; padding-top: 2%; padding-bottom: 2%;">
+              <div class="row">
+                <div class="col-md-1">
+                    <img id="imagenSubiendo" src="">
+                </div>
+                <div id="nombreSubiendo" class="col-md-3">
+                </div>
+                <div id="tamSubiendo" class="col-md-2">
+                </div>
+                <div class="col-md-6">
+                    <div class="progress">
+                      <div id="barraProgreso" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-12">
+              <h2 align="center">Finalizado</h2>
+              <div id="finalizado">
+              </div>
+          </div>
+          <div id="esperando"class="col-md-12">
+          </div>
+      </div>
+      <br/>
+      <footer class="footer">
+        <p>&copy; Airan Rodríguez Rodríguez y Janai G. Expósito Bethencourt 2015</p>
+      </footer>
+        <!-- Modal que para las carpetas -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Alerta</h4>
+              </div>
+              <div class="modal-body">
+                No se permite la subida de directorios/carpetas.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div> <!-- /container -->
+</body>
+</html>
